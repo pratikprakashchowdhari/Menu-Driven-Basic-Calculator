@@ -1,0 +1,45 @@
+while True:
+    print("\nMenu:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Exponentiation")
+    print("5. Division")
+    print("6. Floor Division")
+    print("7. Modulo")
+    print("8. Exit")
+
+    choice = input("Enter your choice (1-8): ")
+
+    if choice == '8':
+        print("Exiting the program. Goodbye!")
+        break
+
+    a = int(input("Enter the first number: "))
+    b = int(input("Enter the second number: "))
+
+    if choice == '1':
+        print("Addition:", (a + b))
+    elif choice == '2':
+        print("Subtraction:", (a - b))
+    elif choice == '3':
+        print("Multiplication:", (a * b))
+    elif choice == '4':
+        print("Exponentiation:", (a ** b))
+    elif choice == '5':
+        if b != 0:  # Avoid division by zero
+            print("Division:", (a / b))
+        else:
+            print("Error: Division by zero")
+    elif choice == '6':
+        if b != 0:  # Avoid floor division by zero
+            print("Floor Division:", (a // b))
+        else:
+            print("Error: Floor division by zero")
+    elif choice == '7':
+        if b != 0:  # Avoid modulo by zero
+            print("Modulo:", (a % b))
+        else:
+            print("Error: Modulo by zero")
+    else:
+        print("Invalid choice. Please enter a number between 1 and 8.")
