@@ -8,7 +8,7 @@ while True:
     print("6. Floor Division")
     print("7. Modulo")
     print("8. Exit")
-
+ 
     choice = input("Enter your choice (1-8): ")
 
     if choice == '8':
